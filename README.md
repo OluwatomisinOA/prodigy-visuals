@@ -1,2 +1,9 @@
-# prodigy-visuals
-World-class cinematic photography and videography portfolio for Prodigy Visuals. Built with React and Tailwind CSS
+# Prodigy Visuals — Cinematic Portfolio
+A world-class photography and videography portfolio website built with React and Tailwind CSS.
+
+## Built With
+- React
+- Tailwind CSS
+- Framer Motion
+- EmailJS
+- Vercel
