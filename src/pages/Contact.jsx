@@ -134,6 +134,7 @@ export default function Contact() {
                                     Name:
                                     <input id="name" type="text" name="name" value={formData.name} onChange={handleChange}
                                         className="w-full bg-[#111111] border border-white/10 text-[#F5F0EA] px-4 py-3 font-body text-sm focus:outline-none focus:border-[#C9A84C] transition-colors duration-300"
+                                        required
                                     />
                                 </label>
                                 <label htmlFor="email"
@@ -142,6 +143,8 @@ export default function Contact() {
                                     Email:
                                     <input id="email" type="text" name="email" value={formData.email} onChange={handleChange}
                                         className="w-full bg-[#111111] border border-white/10 text-[#F5F0EA] px-4 py-3 font-body text-sm focus:outline-none focus:border-[#C9A84C] transition-colors duration-300"
+                                        required
+                                    
                                     />
                                 </label>
                                 <label htmlFor="phone"
@@ -149,12 +152,9 @@ export default function Contact() {
                                 >
                                     Phone Number:
                                     <input 
-                                        id="phone" 
-                                        type="tel" 
-                                        name="phone" 
-                                        value={formData.phone} 
-                                        onChange={handleChange}
+                                        id="phone" type="tel" name="phone" value={formData.phone} onChange={handleChange} pattern="[+]?[0-9\s\-]{7,15}" title="Please enter a valid phone number" 
                                         className="w-full bg-[#111111] border border-white/10 text-[#F5F0EA] px-4 py-3 font-body text-sm focus:outline-none focus:border-[#C9A84C] transition-colors duration-300"
+                                        required
                                     />
                                 </label>
                                 <label htmlFor="service"
@@ -177,6 +177,7 @@ export default function Contact() {
                                     Message:
                                     <textarea id="message" name="message" value={formData.message} onChange={handleChange}
                                         className="w-full bg-[#111111] border border-white/10 text-[#F5F0EA] px-4 py-3 font-body text-sm focus:outline-none focus:border-[#C9A84C] transition-colors duration-300 resize-none h-32"
+                                        required
                                     />
                                 </label>
                             </div>
