@@ -10,6 +10,7 @@ export default function Contact() {
     const [formData,  setFormData] = useState({
         name: '',
         email: '',
+        phone: '',
         service: '',
         message: ''
     })
@@ -140,6 +141,19 @@ export default function Contact() {
                                 >
                                     Email:
                                     <input id="email" type="text" name="email" value={formData.email} onChange={handleChange}
+                                        className="w-full bg-[#111111] border border-white/10 text-[#F5F0EA] px-4 py-3 font-body text-sm focus:outline-none focus:border-[#C9A84C] transition-colors duration-300"
+                                    />
+                                </label>
+                                <label htmlFor="phone"
+                                    className="flex flex-col gap-2 text-[#888888] font-mono text-xs uppercase tracking-widest"
+                                >
+                                    Phone Number:
+                                    <input 
+                                        id="phone" 
+                                        type="tel" 
+                                        name="phone" 
+                                        value={formData.phone} 
+                                        onChange={handleChange}
                                         className="w-full bg-[#111111] border border-white/10 text-[#F5F0EA] px-4 py-3 font-body text-sm focus:outline-none focus:border-[#C9A84C] transition-colors duration-300"
                                     />
                                 </label>
