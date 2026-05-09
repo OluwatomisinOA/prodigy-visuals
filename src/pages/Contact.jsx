@@ -48,7 +48,7 @@ export default function Contact() {
                 <Helmet>
                     <title>Book a Session | Prodigy Visuals</title>
                     <meta name="description" content="Get in touch with Prodigy Visuals to book your photography or videography session. Based in West Yorkshire, UK." />
-                    <meta name="book photographer West Yorkshire, hire videographer UK, photography booking, contact Prodigy Visuals, West Yorkshire photography studio" />
+                    <meta name="keywords" content="book photographer West Yorkshire, hire videographer UK, photography booking, contact Prodigy Visuals, West Yorkshire photography studio" />
                     <meta property="og:title" content="Book a Session | Prodigy Visuals" />
                     <meta property="og:description" content="Get in touch to book your photography or videography session with Prodigy Visuals, West Yorkshire UK" />
                     <meta property="og:image" content="/og-image.jpg" />
@@ -77,9 +77,9 @@ export default function Contact() {
                             Let's Create Together
                         </motion.h1>
                         <div className="text-[#888888] text-sm">
-                            <a href="mailto:obaopeyemionaopepo@gmail.com"><p>opeyemeionaopepo@gmail.com</p></a>
+                            <a href="mailto:obaopeyemionaopepo@gmail.com"><p>obaopeyemeionaopepo@gmail.com</p></a>
                             <a href="tel:+447586789569"><p>+44 7586 789 569</p></a>
-                            <p>Birmingham, UK</p>
+                            <p>West Yorkshire, UK</p>
                         </div>
                         <div className="border-t border-white/30 my-6"></div>
                         <ul className="flex justify-around items-center gap-6">
@@ -125,7 +125,7 @@ export default function Contact() {
                         </ul>
                     </div>
                     <div>
-                        <form ref={formRef}>
+                        <form ref={formRef} onSubmit={handleSubmit}>
                             <div className="flex flex-col gap-6">
                                 <label htmlFor="name" 
                                     className="flex flex-col gap-2 text-[#888888] font-mono text-xs uppercase tracking-widest"
